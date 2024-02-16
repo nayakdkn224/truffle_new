@@ -1,0 +1,60 @@
+1) Explain briefly the steps involved in initiating a project in Truffle
+
+Ans:- for initiating a Truffle Project first we need to  create a Dirictory for Smartcontrat 
+
+command is 
+     step -1     mkdir Metacoin  
+step-2   then come into the folder by cd Metacoin  , 
+step-3   then truffle compile  command is -  truffle compile 
+step -4   then for initiate a bare project   command is truffle init  
+and demonstrate the same
+
+
+. 2) How to Write and Compile a Solidity Smart Contract file using
+Truffle?
+
+step -1 first we need to create a project  dirictory  MetaCoin
+step2  then instal truffle 
+step3   then unbox the truffle box  command is truffle unbox MetaCoin 
+step 4- then we got dirictorys and contract files then we write our project smart work then we start the next step
+step 5   truffle  develop
+step 6  truffle compile 
+step 7 truffle migrate  
+
+
+3) Demonstrate the process of deploying smart contracts on
+Ganache using Truffle suite. 
+
+
+step -1 first we need to create a project  dirictory  MetaCoin
+step2  then instal truffle 
+step3   then unbox the truffle box  command is truffle unbox MetaCoin 
+step 4- then we got dirictorys and contract files then we write our project smart work then we start the next step
+step 5   truffle  develop
+step 6  truffle compile 
+step 7 truffle migrate  
+
+after that we need to change the code for 
+
+
+
+
+Migrate with Truffle Console¶
+While Truffle Develop is an all-in-one personal blockchain and console, it spins up a very basic instance of ganache. You can also use a desktop application, to launch your personal blockchain, which is an easier to understand tool for those new to Ethereum and the blockchain, as it displays much more information up-front. Alternatively, if you want to customize your ganache instance using all the options available to you through the ganache CLI
+
+The only extra step, aside from running Ganache, is that it requires editing the Truffle configuration file to point to the Ganache instance.
+
+Open truffle-config.js in a text editor. Replace the content with the following, ensuring your port number is correct:
+
+module.exports  =    {
+  networks: {
+    development: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*"
+    }
+  }
+};
+This will allow a connection using Ganache's default connection parameters.
+
+Save and close that file.
